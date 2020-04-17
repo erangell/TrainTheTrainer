@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, WebVR! - A-Frame</title>
+    <meta name="description" content="Hello, WebVR! - A-Frame">
+
+    <script src="vendor/aframe-v1.0.4.min.js"></script>
+    <script src="vendor/aframe-ar.js"></script>
+  </head>
+  <body>
+    <a-scene embedded arjs=’sourceType: webcam;’>
+
+      <a-assets>
+        <a-asset-item id="suit-obj" src="obj/acesjustforroomshow.obj"></a-asset-item>
+        <a-asset-item id="suit-mtl" src="obj/acesjustforroomshow.mtl"></a-asset-item>
+      </a-assets>
+
+      <a-marker-camera preset='hiro'>
+          <a-entity obj-model="obj: #suit-obj; mtl: #suit-mtl" scale="0.5 0.5 0.5" position="1 0 -4" rotation="0 0 0"></a-entity>
+      </a-marker-camera>
+      
+      <a-entity camera>
+      </a-entity>
+      
+      <a-plane position="0.5 0 -2" rotation="-90 -90 -90" width="3" height="3" color="#445566" shadow></a-plane>
+      <a-sky color="#ECECEC"></a-sky>
+    </a-scene>
+  </body>
+</html>
