@@ -10,6 +10,10 @@ This repository contains information about creating offline versions of lessons 
 
 The index.html file should then open in a web browser.  The files in the directory are being served by a local web server, so images and objects will load properly without CORS errors.
 
+After you run the above steps once, you should be able to continue development without internet connectivity.
+
+
+
 If you are upgrading this repository to a new version of Aframe:
 
 To find the latest version of Aframe, go to this site: https://github.com/aframevr/aframe/tree/master/dist
